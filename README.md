@@ -1,5 +1,7 @@
 # Charles Shalua – React Portfolio
 
+**Live site:** https://charlesAlgo.github.io/react-portfolio/
+
 My personal portfolio website, built with **React**, **React Router** and **Vite**, styled with plain CSS, and hosted on **GitHub Pages**.
 
 ## Pages
