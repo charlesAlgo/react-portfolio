@@ -134,3 +134,35 @@ a {
   text-align: center;
   color: var(--color-text-muted);
 }
+
+/* Visible outline for keyboard users only (not on mouse click) */
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Gentle fade-in when a new page is shown */
+.main-content > * {
+  animation: page-fade-in 0.35s ease-out;
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Respect users who have asked their OS to minimise motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
