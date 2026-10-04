@@ -47,3 +47,7 @@ public/
   images/             profile, project and service images
   resume.pdf          downloadable resume
 ```
+
+## Author
+
+**Charles Shalua** – [GitHub](https://github.com/charlesAlgo) · [LinkedIn](https://www.linkedin.com/in/charles-shalua/) · [Data-Life Tech](https://data-life.tech)
