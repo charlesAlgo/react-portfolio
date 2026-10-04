@@ -4,7 +4,7 @@
  * PDF resume. Kept deliberately simple for prospective employers.
  */
 import { Link } from 'react-router-dom'
-import { personalInfo } from '../data/portfolioData'
+import { personalInfo, testimonial } from '../data/portfolioData'
 import './About.css'
 
 // import.meta.env.BASE_URL is the site's base path ("/" locally, the repo
@@ -48,6 +48,14 @@ function About() {
           </div>
         </div>
       </div>
+
+      {/* Quoted word for word from a LinkedIn recommendation */}
+      <figure className="about-testimonial">
+        <blockquote>&ldquo;{testimonial.quote}&rdquo;</blockquote>
+        <figcaption>
+          <strong>{testimonial.author}</strong>, {testimonial.authorRole}
+        </figcaption>
+      </figure>
     </section>
   )
 }

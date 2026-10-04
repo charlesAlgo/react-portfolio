@@ -117,6 +117,12 @@ function Contact() {
               </a>
             </li>
             <li>
+              <span className="contact-label">Agency</span>
+              <a href={contactInfo.websiteUrl} target="_blank" rel="noopener noreferrer">
+                {contactInfo.websiteUrl.replace('https://', '')}
+              </a>
+            </li>
+            <li>
               <span className="contact-label">LinkedIn</span>
               <a href={contactInfo.linkedinUrl} target="_blank" rel="noopener noreferrer">
                 View profile

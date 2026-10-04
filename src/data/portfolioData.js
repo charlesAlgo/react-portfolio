@@ -1,8 +1,8 @@
 /**
  * portfolioData.js
  * Single source of truth for all personal content shown on the site.
- * Replace the PLACEHOLDER values below with your real details – no other file
- * needs to change for the content to update everywhere.
+ * Edit the values below to update the content everywhere – no other file
+ * needs to change.
  *
  * Image paths are relative to the /public folder (e.g. "images/profile.svg").
  */
@@ -10,111 +10,114 @@
 export const personalInfo = {
   legalName: 'Charles Shalua',
   initials: 'CS',
-  jobTitle: 'Web Developer & Computer Science Student', // PLACEHOLDER
+  jobTitle: 'AI Engineer',
   profileImage: 'images/profile.svg', // PLACEHOLDER – swap for a head-and-shoulders photo
   resumeFile: 'resume.pdf', // PLACEHOLDER – swap for your real resume
   welcomeMessage:
-    'Welcome! I build clean, accessible and responsive websites and applications.',
+    "Hi, I'm Charles, an AI engineer in Toronto. I build AI systems that read real documents, like electrical drawings, and draft the work for a person to check and approve.",
   missionStatement:
-    'My mission is to use technology to solve real problems for real people – writing code that is simple to use, easy to maintain and built to last.',
+    'My mission is to build AI that people can trust: tested against real results, honest about its limits, and always leaving the final decision to a person.',
   // Short paragraphs shown on the About page
   aboutParagraphs: [
-    'I am a Computer Science student with a passion for web development and user-centred design. I enjoy turning ideas into working products, from the first sketch to the final deployment.', // PLACEHOLDER
-    'Outside of class I build personal projects, contribute to team assignments and keep learning new tools. I am looking for opportunities where I can grow as a developer and add value to a team.', // PLACEHOLDER
+    "I'm an AI engineer based in Toronto and the founder of Data-Life Tech, where I build AI systems for electrical contractors. My systems read drawings, count devices and draft estimates and contracts, and the estimator checks and approves everything before it goes out.",
+    "In the summer of 2026 I was one of six engineers who built ElectricBid Pro for Alton Electric. I built the part that reads the drawings, and I tested it against a count I did by hand so we knew how accurate it really was. I'm also studying Software Engineering and AI at Centennial College.",
+    "Away from the keyboard you'll find me playing or watching football, or deep in a video game. Both keep me competitive, and both have taught me that good teamwork wins more than any single play.",
   ],
 }
 
+// Exact, approved wording from Densley Thomas's LinkedIn recommendation
+export const testimonial = {
+  quote:
+    "He didn't pick the fancy-sounding answer; he picked the one that was actually right, and he proved it.",
+  author: 'Densley Thomas',
+  authorRole: 'President, Alton Electric',
+}
+
 export const contactInfo = {
-  email: 'your.email@example.com', // PLACEHOLDER
-  phone: '+1 (555) 123-4567', // PLACEHOLDER
-  location: 'Your City, Country', // PLACEHOLDER
+  email: 'charlesshalua01@gmail.com',
+  phone: '+1 (613) 363-8543',
+  location: 'Toronto, Canada',
   githubUrl: 'https://github.com/charlesAlgo',
-  linkedinUrl: 'https://www.linkedin.com/', // PLACEHOLDER
+  linkedinUrl: 'https://www.linkedin.com/in/charles-shalua/',
+  websiteUrl: 'https://data-life.tech',
 }
 
 export const projects = [
   {
-    id: 'task-manager',
-    title: 'Task Manager App', // PLACEHOLDER
+    id: 'alton-ai-takeoff',
+    title: 'Alton Electric – AI Drawing Takeoff',
     image: 'images/project-1.svg',
-    role: 'Solo developer – design, front end and local storage',
+    role: 'Engineer on a team of six, building ElectricBid Pro',
     description:
-      'A to-do application that lets users create, edit, filter and complete tasks. Tasks persist in the browser between visits.',
-    outcome: 'Delivered on time and used daily by classmates to track coursework.',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
+      "I built the part of Alton Electric's estimating app that reads electrical drawings. It sorts the pages, reads each sheet one small section at a time, counts each device once and drafts the count for the estimator to approve.",
+    outcome:
+      'I hand-counted a real sheet (39 devices) to test it. The shipped nine-section setting over-counted by 58%, while four sections came within about 1%, so we changed the default before release. Alton’s estimators report that a takeoff now takes 5–10 minutes instead of 2–3 hours.',
+    technologies: ['JavaScript', 'Node.js', 'Electron', 'PDFium (WebAssembly)', 'Vision AI model'],
   },
   {
-    id: 'weather-dashboard',
-    title: 'Weather Dashboard', // PLACEHOLDER
+    id: 'alton-release-quality',
+    title: 'Alton Electric – ElectricBid Pro Release & Quality',
     image: 'images/project-2.svg',
-    role: 'Front-end developer in a team of three',
+    role: 'Engineer – data integrity, CI, testing and release',
     description:
-      'A dashboard that fetches live weather data from a public API and shows a five-day forecast for any searched city.',
-    outcome: 'Achieved the highest grade in the group project and improved my API skills.',
-    technologies: ['React', 'REST API', 'CSS'],
+      'Beyond the AI work, I helped make ElectricBid Pro safe to hand to real estimators: keeping data in sync across machines, building the CI pipeline, acceptance testing and preparing the release.',
+    outcome:
+      '37 pull requests opened and 36 merged (about 16,400 lines) with 29 test suites. Version 1.0.0 shipped on 4 Sep 2026 and is in use on Alton’s live bids.',
+    technologies: ['JavaScript', 'Node.js', 'PostgreSQL', 'GitHub Actions', 'Electron Builder'],
   },
   {
-    id: 'restaurant-site',
-    title: 'Restaurant Website', // PLACEHOLDER
+    id: 'data-life-website',
+    title: 'Data-Life Tech – Agency Website & Booking System',
     image: 'images/project-3.svg',
-    role: 'Lead designer and developer',
+    role: 'Founder and sole engineer',
     description:
-      'A responsive multi-page website for a local restaurant with a menu, photo gallery and reservation form.',
-    outcome: 'Client reported more online reservations after launch.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+      'The website for my AI engineering agency, data-life.tech. It is built around a simple path for contractors: a free audit form, an emailed report and a booked 30-minute call.',
+    outcome:
+      'The booking system is live: every booking is verified, saved to the database and announced by Slack and email. The public site is in pre-launch while the audit form is finished.',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Vercel'],
   },
 ]
 
 export const education = [
   {
-    id: 'bsc',
-    qualification: 'Bachelor of Science in Computer Science', // PLACEHOLDER
-    institution: 'Your University',
-    startYear: '2024',
+    id: 'centennial-advanced-diploma',
+    qualification: 'Advanced Diploma in Software Engineering and AI',
+    institution: 'Centennial College',
+    startYear: '2025',
     endYear: '2028 (expected)',
-    details: 'Coursework: Web Design, Data Structures, Databases, Software Engineering.',
-  },
-  {
-    id: 'cert-web',
-    qualification: 'Responsive Web Design Certification', // PLACEHOLDER
-    institution: 'freeCodeCamp',
-    startYear: '2023',
-    endYear: '2023',
-    details: 'HTML, CSS, Flexbox, Grid and accessibility fundamentals.',
-  },
-  {
-    id: 'high-school',
-    qualification: 'High School Diploma', // PLACEHOLDER
-    institution: 'Your High School',
-    startYear: '2020',
-    endYear: '2024',
-    details: 'Graduated with honours in Mathematics and Computer Studies.',
+    details:
+      "Industry placement (summer 2026): engineer on the six-person team that built ElectricBid Pro for Alton Electric.",
   },
 ]
 
+// Services offered through Data-Life Tech
 export const services = [
   {
-    id: 'web-development',
-    title: 'Web Development',
-    image: 'images/service-web.svg',
-    description: 'Fast, responsive websites built with modern HTML, CSS, JavaScript and React.',
+    id: 'ai-takeoff',
+    title: 'AI Drawing Takeoff',
+    image: 'images/service-takeoff.svg',
+    description:
+      'A system that reads your plan sheets and counts every outlet, light and switch, so your estimator checks a count instead of making one.',
   },
   {
-    id: 'ui-design',
-    title: 'UI / UX Design',
-    image: 'images/service-design.svg',
-    description: 'Clean, accessible interfaces designed around how people actually use them.',
+    id: 'estimate-drafting',
+    title: 'Estimate Drafting',
+    image: 'images/service-estimate.svg',
+    description:
+      'I connect the counts to your own price list and supplier quotes, and the system drafts the estimate for you to review.',
   },
   {
-    id: 'general-programming',
-    title: 'General Programming',
-    image: 'images/service-code.svg',
-    description: 'Scripts, tools and small applications in JavaScript, Python and Java.',
+    id: 'contract-drafting',
+    title: 'Contract Drafting',
+    image: 'images/service-contract.svg',
+    description:
+      'From your sample contracts, the system learns your scope wording, exclusions and terms, then drafts each new contract in your words. You approve every word.',
   },
   {
-    id: 'mobile-apps',
-    title: 'Mobile-Friendly Apps',
-    image: 'images/service-mobile.svg',
-    description: 'Web apps that work smoothly on phones, tablets and desktops alike.',
+    id: 'accuracy-check',
+    title: 'Accuracy Check',
+    image: 'images/service-accuracy.svg',
+    description:
+      'One hand-counted drawing is a small test. I run the same check on your drawings before you rely on a single number.',
   },
 ]
