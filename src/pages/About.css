@@ -2,7 +2,7 @@
 
 .about-layout {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 240px 1fr;
   align-items: center;
   gap: 3rem;
   padding: 2.5rem;
@@ -16,6 +16,7 @@
   height: auto;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: center 35%; /* keep the face centred in the circle crop */
   border-radius: 50%;
   border: 6px solid var(--color-primary-soft);
 }

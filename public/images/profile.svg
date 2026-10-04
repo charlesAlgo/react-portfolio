@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
-  <!-- PLACEHOLDER headshot: replace with a real photo (e.g. profile.jpg) -->
-  <rect width="320" height="320" fill="#dbeafe"/>
-  <circle cx="160" cy="125" r="62" fill="#2563eb"/>
-  <path d="M40 320c10-75 60-115 120-115s110 40 120 115z" fill="#2563eb"/>
-  <text x="160" y="300" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">Your photo here</text>
-</svg>

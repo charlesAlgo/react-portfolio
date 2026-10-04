@@ -11,8 +11,8 @@ export const personalInfo = {
   legalName: 'Charles Shalua',
   initials: 'CS',
   jobTitle: 'AI Engineer',
-  profileImage: 'images/profile.svg', // PLACEHOLDER – swap for a head-and-shoulders photo
-  resumeFile: 'resume.pdf', // PLACEHOLDER – swap for your real resume
+  profileImage: 'images/profile.png',
+  resumeFile: 'resume.pdf',
   welcomeMessage:
     "Hi, I'm Charles, an AI engineer in Toronto. I build AI systems that read real documents, like electrical drawings, and draft the work for a person to check and approve.",
   missionStatement:
@@ -87,6 +87,22 @@ export const education = [
     endYear: '2028 (expected)',
     details:
       "Industry placement (summer 2026): engineer on the six-person team that built ElectricBid Pro for Alton Electric.",
+  },
+  {
+    id: 'claude-code-certificate',
+    qualification: 'Claude Code in Action Certificate',
+    institution: 'Anthropic',
+    startYear: 'Completed',
+    endYear: 'Completed',
+    details: 'Professional certificate in building software with Claude Code.',
+  },
+  {
+    id: 'google-data-analytics',
+    qualification: 'Google Data Analytics Professional Certificate',
+    institution: 'Google, via Coursera',
+    startYear: 'Completed',
+    endYear: 'Completed',
+    details: 'Data cleaning, analysis and visualisation with spreadsheets, SQL and dashboards.',
   },
 ]
 

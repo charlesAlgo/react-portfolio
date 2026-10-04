@@ -21,8 +21,8 @@ function About() {
           className="about-photo"
           src={`${publicPath}${personalInfo.profileImage}`}
           alt={`Head and shoulders portrait of ${personalInfo.legalName}`}
-          width="320"
-          height="320"
+          width="181"
+          height="227"
         />
 
         <div className="about-text">
