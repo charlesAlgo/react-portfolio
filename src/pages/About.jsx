@@ -1,11 +1,53 @@
 /**
  * About.jsx
- * About page – content added in a later commit.
+ * About Me page: legal name, headshot, a short bio and a link to the
+ * PDF resume. Kept deliberately simple for prospective employers.
  */
+import { Link } from 'react-router-dom'
+import { personalInfo } from '../data/portfolioData'
+import './About.css'
+
+// import.meta.env.BASE_URL is the site's base path ("/" locally, the repo
+// name on GitHub Pages), so public files resolve correctly in both places
+const publicPath = import.meta.env.BASE_URL
+
 function About() {
   return (
     <section className="page container">
-      <h1>About</h1>
+      <h1 className="page-title">About Me</h1>
+
+      <div className="about-layout">
+        <img
+          className="about-photo"
+          src={`${publicPath}${personalInfo.profileImage}`}
+          alt={`Head and shoulders portrait of ${personalInfo.legalName}`}
+          width="320"
+          height="320"
+        />
+
+        <div className="about-text">
+          <h2 className="about-name">{personalInfo.legalName}</h2>
+          <p className="about-title">{personalInfo.jobTitle}</p>
+
+          {personalInfo.aboutParagraphs.map((paragraphText) => (
+            <p key={paragraphText}>{paragraphText}</p>
+          ))}
+
+          <div className="about-actions">
+            <a
+              className="button"
+              href={`${publicPath}${personalInfo.resumeFile}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View My Resume (PDF)
+            </a>
+            <Link to="/projects" className="button button-outline">
+              See My Projects
+            </Link>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

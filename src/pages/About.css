@@ -1,0 +1,57 @@
+/* About.css – photo beside bio, stacking on small screens */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--color-primary-soft);
+}
+
+.about-name {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.about-title {
+  margin: 0.25rem 0 1.25rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+@media (max-width: 760px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .about-photo {
+    max-width: 220px;
+    margin-inline: auto;
+  }
+
+  .about-actions {
+    justify-content: center;
+  }
+}

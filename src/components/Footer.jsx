@@ -5,9 +5,10 @@
 import { personalInfo, contactInfo } from '../data/portfolioData'
 import './Footer.css'
 
-function Footer() {
-  const currentYear = new Date().getFullYear()
+// Calculated once when the site loads, not on every render
+const currentYear = new Date().getFullYear()
 
+function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">

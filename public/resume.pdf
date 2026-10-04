@@ -1,0 +1,51 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1279 >>
+stream
+BT /F2 24 Tf 72 740 Td (Charles Shalua) Tj ET
+BT /F1 12 Tf 72 718 Td (Web Developer & Computer Science Student) Tj ET
+BT /F1 10 Tf 72 700 Td (your.email@example.com  |  +1 \(555\) 123-4567  |  github.com/charlesAlgo) Tj ET
+BT /F2 14 Tf 72 660 Td (Profile) Tj ET
+BT /F1 11 Tf 72 642 Td (PLACEHOLDER RESUME - replace public/resume.pdf with your real resume.) Tj ET
+BT /F1 11 Tf 72 626 Td (Computer Science student passionate about web development and user-centred design.) Tj ET
+BT /F2 14 Tf 72 590 Td (Education) Tj ET
+BT /F1 11 Tf 72 572 Td (B.Sc. Computer Science - Your University \(2024 - 2028 expected\)) Tj ET
+BT /F1 11 Tf 72 556 Td (Responsive Web Design Certification - freeCodeCamp \(2023\)) Tj ET
+BT /F1 11 Tf 72 540 Td (High School Diploma - Your High School \(2020 - 2024\)) Tj ET
+BT /F2 14 Tf 72 504 Td (Projects) Tj ET
+BT /F1 11 Tf 72 486 Td (Task Manager App - solo developer \(JavaScript, HTML, CSS\)) Tj ET
+BT /F1 11 Tf 72 470 Td (Weather Dashboard - front-end developer, team of three \(React, REST API\)) Tj ET
+BT /F1 11 Tf 72 454 Td (Restaurant Website - lead designer and developer \(HTML, CSS, JavaScript\)) Tj ET
+BT /F2 14 Tf 72 418 Td (Skills) Tj ET
+BT /F1 11 Tf 72 400 Td (HTML, CSS, JavaScript, React, Git & GitHub, Python, Java, Responsive Design) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000001582 00000 n 
+0000001652 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1727
+%%EOF
